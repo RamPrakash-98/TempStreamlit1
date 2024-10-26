@@ -60,7 +60,9 @@ num_charts=len(indices)
 # print(num_charts)
 for _ in range(num_charts):
     add_chart()
+count=0
 while num_charts>0:
+    
     # cols = st.columns(num_charts)
     # count=0
 
@@ -113,7 +115,7 @@ while num_charts>0:
                                     yaxis2=dict(title='Secondary Y Axis Title', overlaying='y', side='right'),
                                 )
 
-                                st.plotly_chart(fig)
+                                st.plotly_chart(fig,key=(i,j,count))
 
                         
                         else:
@@ -140,7 +142,7 @@ while num_charts>0:
                                     yaxis2=dict(title='Secondary Y Axis Title', overlaying='y', side='right'),
                                 )
 
-                                st.plotly_chart(fig)
+                                st.plotly_chart(fig,key=(i,j,count))
 
 
                         curr_chart+=1
