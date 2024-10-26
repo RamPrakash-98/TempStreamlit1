@@ -147,6 +147,6 @@ while num_charts>0:
 
                         curr_chart+=1
 
-
+    count+=1
                         
 
